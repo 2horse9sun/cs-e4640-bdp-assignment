@@ -1,0 +1,7 @@
+Flask
+pymongo
+docker
+uuid
+requests
+elasticsearch
+apscheduler

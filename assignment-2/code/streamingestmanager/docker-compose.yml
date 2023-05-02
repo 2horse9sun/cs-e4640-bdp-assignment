@@ -1,0 +1,18 @@
+version: '3'
+services:
+  batchingestjobdb:
+    image: mongo:4.4.9
+    volumes:
+      - batchingestjobdb-data:/data/db
+    ports:
+      - 27018:27017
+    networks:
+      - bdp-net
+
+volumes:
+  batchingestjobdb-data:
+    driver: local
+
+networks:
+  bdp-net:
+    external: true
